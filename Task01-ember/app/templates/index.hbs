@@ -1,0 +1,12 @@
+<h2 id="title">Welcome to Ember</h2>
+
+<p>Diese Liste der Kawasaki-Motorräder ist nicht alphabetisch, sondern chronologisch und nach Motorradtypen gegliedert.</p>
+
+{{#each model as |kawa|}} <!-- wieso wirft kawa unexpected Token error :(? -->
+    <h2>Kawasaki {{kawa.name}}</h2>
+    <p>Jahr: {{kawa.year}}</p>
+    <p>Leistung: {{kawa.ps}}</p>
+    <p>Kommentar: {{kawa.comment}}</p>
+{{/each}}
+
+{{outlet}}
