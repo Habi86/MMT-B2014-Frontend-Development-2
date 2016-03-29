@@ -1,0 +1,7 @@
+{{yield}}
+<h2><button {{action "toggleBody"}}>Kawasaki {{kawa.name}}</button></h2>
+{{#if isShowingBody}}
+  <p>Jahr: {{kawa.year}}</p>
+  <p>Leistung: {{kawa.ps}}</p>
+  <p>Kommentar: {{kawa.comment}}</p>
+{{/if}}
