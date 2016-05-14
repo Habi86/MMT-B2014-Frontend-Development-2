@@ -4,5 +4,5 @@ import Model from 'ember-data/model'
 
 export default Model.extend({
   name: DS.attr('string'),
-  currentCampaign: DS.belongsTo('campaign') // One-to-One
+  current: DS.belongsTo('campaign') // One-to-One
 });
