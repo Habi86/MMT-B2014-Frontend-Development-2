@@ -2,5 +2,5 @@ import JSONAPIAdapter from 'ember-data/adapters/json-api';
 
 export default JSONAPIAdapter.extend({
   host: 'https://api.clustar.net',
-  namespace: 'v1'
+  namespace: 'v2'
 });

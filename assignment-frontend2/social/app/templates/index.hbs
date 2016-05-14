@@ -1,1 +1,11 @@
-{{outlet}}
+<div class="row">
+    <div class="col-sm-12">
+        <h2> Projects </h2>
+      {{#each model as |project|}}
+          <strong> Project Name </strong>
+          <p>{{project.name}}</p>
+          <strong> Current Campaign </strong>
+          <p>{{project.currentCampaign.name}}</p>
+      {{/each}}
+    </div>
+</div>

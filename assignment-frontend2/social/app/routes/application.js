@@ -3,6 +3,10 @@ import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mi
 
 export default Ember.Route.extend(ApplicationRouteMixin, {
 
+  model() {
+    return this.store.findAll('project')
+  },
+
   fetchCurrentUser() {
     const authentication = this.get('session.data.authenticated')
   },
